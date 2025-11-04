@@ -17,6 +17,126 @@ body {
   width: auto;
 }
 
+/*==================================================================================
+/*==================================================================================
+
+/* Navbar */
+.navbar {
+  background: #000; /* black background */
+  padding: 8px 20px;
+}
+
+/* Menu layout */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Dropdown wrapper */
+.menu li {
+  position: relative;
+}
+
+/* Button/link that toggles dropdown (has class dropbtn) */
+.dropbtn {
+  display: block;
+  padding: 12px 16px;
+  color: #ffd700;           /* yellow text */
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Hover / focus states */
+.dropbtn:hover,
+.dropbtn:focus {
+  background: #111;         /* slight contrast on hover */
+  color: #fff100;          /* slightly brighter yellow */
+  outline: none;
+  text-decoration: none;
+}
+
+/* Dropdown panel */
+.dropdown-content {
+  display: none;            /* hidden until open */
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  background: #000;         /* keep black background */
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6), 0 2px 6px rgba(255, 215, 0, 0.04);
+  padding: 6px;
+  z-index: 100;
+  transform-origin: top left;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  opacity: 0;
+  transform: translateY(-6px) scale(0.99);
+  pointer-events: none;
+}
+
+/* Items inside dropdown */
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #ffd700;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+/* Hover for dropdown items */
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background: #111;
+  color: #fff100;
+  outline: none;
+}
+
+/* Show dropdown when parent li has .open OR on focus-within (keyboard) OR hover (mouse) */
+.menu li.dropdown.open > .dropdown-content,
+.menu li.dropdown:hover > .dropdown-content,
+.menu li.dropdown:focus-within > .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Make sure aria-expanded toggles color subtly */
+.menu li.dropdown.open > .dropbtn {
+  background: rgba(255, 215, 0, 0.04);
+}
+
+/* Responsive: stack menu on small screens */
+@media (max-width: 560px) {
+  .menu {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0;
+  }
+  .dropdown-content {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-top: 6px;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/*==================================================================================
+/*==================================================================================
 /* This is a hack for FireFox that the <b> tag does not work */
 strong,
 b {
