@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Biohaha</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner" style="background: url('img-practices/biohaha-background.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">Exhibitions</h2>
+            <p class="text"> 
+				Biohaha’s exhibitions are spaces for encounter, where process becomes visible and audiences are invited to experience the material, sonic, and biological traces of our research. 
+				Each exhibition reconfigures the lab into a site of listening and relation, transforming data, sound, and living material into collective environments. 
+			  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!--------------------------------------------------------------------------------------------> 
+	<!--Start Menu-->  
+	  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <ul class="menu">
+      <li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Sensewalking Flux Series ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Sensewalking Flux Series">
+          <li role="none"><a role="menuitem" href="index.html">BPAF<br> Bandung - Indonesia</a></li>
+          <li role="none"><a role="menuitem" href="acc-gwangju.html">Asia Culture Center<br> Gwangju - Korea</a></li>
+          <li role="none"><a role="menuitem" href="dugu-busan.html">Art Space Dugu<br> Busan - Korea</a></li>
+          <li role="none"><a role="menuitem" href="yamanakasuplex.html">Yamanaka Suplex<br> Kyoto, Shiga - Japan</a></li>
+		  <li role="none"><a role="menuitem" href="smi-bangalore.html">Srishti Manipal Institute<br> Bangalore - India</a></li>
+        </ul>
+      </li> 
+		
+		<li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Zine ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Zine">
+          <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-byol.pdf" target="_blank">Build Your Own Lab<br> and Share It</a></li>
+          <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine.pdf" target="_blank">Sensewalking Flux<br> Indonesia</a></li>
+          <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-acc.pdf" target="_blank">Sensewalking Flux<br> Korea (I)</a></li>
+		  <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-dugu.pdf" target="_blank">Sensewalking Flux<br> Korea (II)</a></li>
+		  <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-yamanaka_suplex.pdf" target="_blank">Sensewalking Flux<br> Japan</a></li>
+		  <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-smi.pdf" target="_blank">Sensewalking Flux<br> India</a></li>
+        </ul>
+      </li>
+		
+		<li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Practices ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Sensewalking Flux Series">
+          <li role="none"><a role="menuitem" href="projects.html">Projects</a></li>
+          <li role="none"><a role="menuitem" href="exhibitions.html">Exhibitions</a></li>
+          <li role="none"><a role="menuitem" href="residencies.html">Residencies</a></li>
+          <li role="none"><a role="menuitem" href="workshops.html">Workshops</a></li>
+		  <li role="none"><a role="menuitem" href="research.html">Research</a></li>
+		  <li role="none"><a role="menuitem" href="products.html">Products</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Contact Us ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Contact">
+          <li role="none"><a role="menuitem" href="https://www.instagram.com/bio.haha/" target="_blank">
+			  <i class="fab fa-instagram"></i> Biohaha</a></li>
+          <li role="none"><a role="menuitem" href="https://www.instagram.com/helmihardian/" target="_blank">
+			  <i class="fab fa-instagram"></i> Helmi Hardian</a></li>
+          <li role="none"><a role="menuitem" href="https://www.instagram.com/angela_sunaryo/" target="_blank">
+			  <i class="fab fa-instagram"></i> Angela Sunaryo</a></li>
+        </ul>
+      </li> 		
+    </ul>
+  </nav>
+
+  <!-- Small script to make dropdowns reliable on hover, focus, touch, and keyboard -->
+  <script>
+    (function () {
+      const DROPDOWN_SELECTOR = '[data-dropdown]';
+      const dropdowns = Array.from(document.querySelectorAll(DROPDOWN_SELECTOR));
+
+      // Utility: close all dropdowns except optional keep
+      function closeAll(except = null) {
+        dropdowns.forEach(dd => {
+          if (dd === except) return;
+          dd.classList.remove('open');
+          const btn = dd.querySelector('.dropbtn');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      // Toggle a dropdown element
+      function toggleDropdown(dd, open) {
+        const btn = dd.querySelector('.dropbtn');
+        if (open === undefined) open = !dd.classList.contains('open');
+        closeAll(open ? dd : null);
+        dd.classList.toggle('open', open);
+        if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+
+      // Click on button (or tap) — prevent default anchor navigation
+      dropdowns.forEach(dd => {
+        const btn = dd.querySelector('.dropbtn');
+        const panel = dd.querySelector('.dropdown-content');
+
+        // Mouse enter/leave: show dropdown on hover for desktop pointer devices
+        dd.addEventListener('pointerenter', (e) => {
+          // only show on non-touch pointer (mouse)
+          if (e.pointerType === 'mouse') toggleDropdown(dd, true);
+        });
+        dd.addEventListener('pointerleave', (e) => {
+          if (e.pointerType === 'mouse') toggleDropdown(dd, false);
+        });
+
+        // Click / Tap: open/close (prevents sticky hover issues on touch)
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          toggleDropdown(dd);
+        });
+
+        // Keyboard: Enter / Space to toggle; Escape to close
+        btn.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+            e.preventDefault();
+            toggleDropdown(dd);
+            // move focus to first menuitem when opening
+            if (dd.classList.contains('open')) {
+              const firstItem = panel.querySelector('[role="menuitem"]');
+              if (firstItem) firstItem.focus();
+            }
+          } else if (e.key === 'Escape' || e.key === 'Esc') {
+            toggleDropdown(dd, false);
+            btn.focus();
+          }
+        });
+
+        // Close when a menu item is activated (click)
+        panel.addEventListener('click', (e) => {
+          // allow links to work, but close menu after click
+          toggleDropdown(dd, false);
+        });
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest(DROPDOWN_SELECTOR)) closeAll();
+      });
+
+      // Close on ESC globally
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' || e.key === 'Esc') closeAll();
+      });
+    })();
+  </script> 
+	  	<!--End Menu-->
+	  	<!-------------------------------------------------------------------------------------------->	  
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro--> 	  
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <img class="image" src="img-practices/biohaha-helmi_hardian-angela_sunaryo-exhibition.jpg">
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+			  <h2 id="Open">This section is under development and will be updated soon</h2>
+            <hr>
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Credits-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text text-small text-italic add-top-margin-large">
+              Credits: <span class="highlight-text">Documentation</span>: Biohaha
+            </p>
+          </div>
+        </div>
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+</body>
+
+</html>

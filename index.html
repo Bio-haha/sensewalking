@@ -10,8 +10,6 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/footer.js"></script>
 </head>
 
 <body>
@@ -26,19 +24,151 @@
           <div class="flex-item flex-column">
             <h2 class="add-top-margin-small">SENSEWALKING FLUX</h2>
             <p class="text">
-              <b>Sensewalking Flux</b> is a participatory research project based on multisensory navigation that explores embodied experiences in understanding the city. This work invites participants to engage in <b>sensewalking</b>, where sensory interations—sight, sound, touch, smell, and taste—are documented using specific recording patterns and then translated into a <b>generative score</b>. This score is later presented as a <b>collective performance</b>, transforming data into sound that reflects a cross-sensory experience of Braga: a landmark as it is and as it is perceived.
+              <b>Sensewalking Flux</b> is a participatory research project based on multisensory navigation that explores embodied experiences in understanding the city. This work invites participants to engage in <b>sensewalking</b>, where sensory interactions—sight, sound, touch, smell, and taste—are documented using specific recording patterns and then translated into a <b>generative score</b>. This score is later presented as a <b>collective performance</b>, transforming data into sound that reflects a cross-sensory experience of Braga: a landmark as it is and as it is perceived.
             </p>
           </div>
         </div>
       </div>
     </div>
     <!--End Header-->
-    <!-------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------> 
+	<!--Start Menu-->
+	  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <ul class="menu">
+      <li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Sensewalking Flux Series ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Sensewalking Flux Series">
+          <li role="none"><a role="menuitem" href="index.html">BPAF<br> Bandung - Indonesia</a></li>
+          <li role="none"><a role="menuitem" href="acc-gwangju.html">Asia Culture Center<br> Gwangju - Korea</a></li>
+          <li role="none"><a role="menuitem" href="dugu-busan.html">Art Space Dugu<br> Busan - Korea</a></li>
+          <li role="none"><a role="menuitem" href="yamanakasuplex.html">Yamanaka Suplex<br> Kyoto, Shiga - Japan</a></li>
+		  <li role="none"><a role="menuitem" href="smi-bangalore.html">Srishti Manipal Institute<br> Bangalore - India</a></li>
+        </ul>
+      </li>
+		
+		<li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Zine ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Zine">
+          <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-byol.pdf" target="_blank">Build Your Own Lab<br> and Share It</a></li>
+          <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine.pdf" target="_blank">Sensewalking Flux<br> Indonesia</a></li>
+          <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-acc.pdf" target="_blank">Sensewalking Flux<br> Korea (I)</a></li>
+		  <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-dugu.pdf" target="_blank">Sensewalking Flux<br> Korea (II)</a></li>
+		  <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-yamanaka_suplex.pdf" target="_blank">Sensewalking Flux<br> Japan</a></li>
+		  <li role="none"><a role="menuitem" href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine-smi.pdf" target="_blank">Sensewalking Flux<br> India</a></li>
+        </ul>
+      </li>
+		
+		<li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Practices ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Sensewalking Flux Series">
+          <li role="none"><a role="menuitem" href="projects.html">Projects</a></li>
+          <li role="none"><a role="menuitem" href="exhibitions.html">Exhibitions</a></li>
+          <li role="none"><a role="menuitem" href="residencies.html">Residencies</a></li>
+          <li role="none"><a role="menuitem" href="workshops.html">Workshops</a></li>
+		  <li role="none"><a role="menuitem" href="research.html">Research</a></li>
+		  <li role="none"><a role="menuitem" href="products.html">Products</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown" data-dropdown>
+        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Contact Us ▾</a>
+        <ul class="dropdown-content" role="menu" aria-label="Contact">
+          <li role="none"><a role="menuitem" href="https://www.instagram.com/bio.haha/" target="_blank">
+			  <i class="fab fa-instagram"></i> Biohaha</a></li>
+          <li role="none"><a role="menuitem" href="https://www.instagram.com/helmihardian/" target="_blank">
+			  <i class="fab fa-instagram"></i> Helmi Hardian</a></li>
+          <li role="none"><a role="menuitem" href="https://www.instagram.com/angela_sunaryo/" target="_blank">
+			  <i class="fab fa-instagram"></i> Angela Sunaryo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Small script to make dropdowns reliable on hover, focus, touch, and keyboard -->
+  <script>
+    (function () {
+      const DROPDOWN_SELECTOR = '[data-dropdown]';
+      const dropdowns = Array.from(document.querySelectorAll(DROPDOWN_SELECTOR));
+
+      // Utility: close all dropdowns except optional keep
+      function closeAll(except = null) {
+        dropdowns.forEach(dd => {
+          if (dd === except) return;
+          dd.classList.remove('open');
+          const btn = dd.querySelector('.dropbtn');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      // Toggle a dropdown element
+      function toggleDropdown(dd, open) {
+        const btn = dd.querySelector('.dropbtn');
+        if (open === undefined) open = !dd.classList.contains('open');
+        closeAll(open ? dd : null);
+        dd.classList.toggle('open', open);
+        if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+
+      // Click on button (or tap) — prevent default anchor navigation
+      dropdowns.forEach(dd => {
+        const btn = dd.querySelector('.dropbtn');
+        const panel = dd.querySelector('.dropdown-content');
+
+        // Mouse enter/leave: show dropdown on hover for desktop pointer devices
+        dd.addEventListener('pointerenter', (e) => {
+          // only show on non-touch pointer (mouse)
+          if (e.pointerType === 'mouse') toggleDropdown(dd, true);
+        });
+        dd.addEventListener('pointerleave', (e) => {
+          if (e.pointerType === 'mouse') toggleDropdown(dd, false);
+        });
+
+        // Click / Tap: open/close (prevents sticky hover issues on touch)
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          toggleDropdown(dd);
+        });
+
+        // Keyboard: Enter / Space to toggle; Escape to close
+        btn.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+            e.preventDefault();
+            toggleDropdown(dd);
+            // move focus to first menuitem when opening
+            if (dd.classList.contains('open')) {
+              const firstItem = panel.querySelector('[role="menuitem"]');
+              if (firstItem) firstItem.focus();
+            }
+          } else if (e.key === 'Escape' || e.key === 'Esc') {
+            toggleDropdown(dd, false);
+            btn.focus();
+          }
+        });
+
+        // Close when a menu item is activated (click)
+        panel.addEventListener('click', (e) => {
+          // allow links to work, but close menu after click
+          toggleDropdown(dd, false);
+        });
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest(DROPDOWN_SELECTOR)) closeAll();
+      });
+
+      // Close on ESC globally
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' || e.key === 'Esc') closeAll();
+      });
+    })();
+  </script>
+	  	<!--End Menu-->
+	  	<!-------------------------------------------------------------------------------------------->
     <div class="content">
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro--> 
-		  
+        <!--Start Intro--> 		  
         <div class="flex-row">
           <div class="flex-item flex-column">
             <img class="image" src="img/biohaha-helmi_hardian-angela_sunaryo-wide-img.png">
@@ -47,80 +177,64 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text"> 
-				
-<b>This project unfolds in three phases:</b> <br><br>
-				
-<b>// Sensewalking & Mapping</b> – Participants explore Braga through embodied perception, documenting their experiences through sketches, sound patterns, textures, and bodily sensations. These observations are converted into a graphic score, capturing an intersubjective experience of the city. <br><br>
-				
-<b>// DIY Bio-Synth Workshop</b> – Participants assemble a light-sensitive synthesizer, establishing a connection between visual stimuli and sound. <br><br>
-				
-<B>// Collective Audio-Visual Performance</B> – The generated score serves as a guide for an improvised performance in public space, merging movement, sound, and visual projections into an intersubjective ecology between body, space, and technology <br><br>
-				
-This project highlights <b>spontaneity, perception, and intersubjectivity</b>, fostering an egalitarian interaction between the city and its inhabitants. By positioning the city as a "<b>living instrument</b>," Sensewalking Flux celebrates the unpredictability that emerges from the ecotone between body, space, and technology.
-            </p>
-            
+				<strong>This project unfolds in three phases:</strong> <br><br>
+              	<strong>// Sensewalking &amp; Mapping</strong> – Participants explore Braga through embodied perception, documenting their experiences through sketches, sound patterns, textures, and bodily sensations. These observations are converted into a graphic score, capturing an intersubjective experience of the city. <br><br>
+              	<strong>// DIY Bio-Synth Workshop</strong> – Participants assemble a light-sensitive synthesizer, establishing a connection between visual stimuli and sound. <br><br>
+              	<strong>// Collective Audio-Visual Performance</strong> – The generated score serves as a guide for an improvised performance in public space, merging movement, sound, and visual projections into an intersubjective ecology between body, space, and technology. <br><br>
+              	This project highlights <strong>spontaneity, perception, and intersubjectivity</strong>, fostering an egalitarian interaction between the city and its inhabitants. By positioning the city as a "<strong>living instrument</strong>," Sensewalking Flux celebrates the unpredictability that emerges from the ecotone between body, space, and technology. 
+			  </p>
           </div>
         </div>
         <!--End Intro-->
         <!-------------------------------------------------------------------------------------------->
-		<!--Start Schedule--> 
-		  
+		<!--Start Zine and Schedule--> 	  
         <div class="flex-row">
           <div class="flex-item flex-column"> 
 			  <img class="image center" src="img/biohaha-helmi_hardian-angela_sunaryo-zine.png" style="max-width: 422px;">
-			  <a href="https://github.com/Bio-haha/sensewalking/blob/main/pdf/biohaha-helmi_hardian-angela_sunaryo-zine.pdf" target="_blank" class="image max-width-422">
+			  <a href="pdf/biohaha-helmi_hardian-angela_sunaryo-zine.pdf" target="_blank">
 			  <p class="image-caption">Sensewalking Flux Zine Download</p> 
 				  </a>
             <img class="image" src="img/biohaha-schedule-img.png">
           </div>
         </div>
-		<!--End Schedule-->
+		<!--End Zine and Schedule-->
         <!-------------------------------------------------------------------------------------------->
-		<!--Start Text Only-->
+		<!--Start Text and Info-->
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="Seeing">Seeing Beyond Sight: A Sketching Exercise</h2>
             <hr>
-            <p class="text">
-Sketching is more than just drawing what’s in front of you—it’s a way of learning to see. It trains us to observe details, patterns, and relationships between spaces, objects, and people. Sketching helps us analyze our surroundings, making us more aware of the invisible forces shaping them. <br><br>
-
-As Norman Crowe and Paul Laseau put it,<br>
-<i>"Seeing is a necessary prelude to visual expression.”</i> <br><br>
-
-Eric Jenkins expands on this, explaining that sketching is a bodily interaction:<br>
-<i>"It is necessary to learn from the world by engaging in its reality—its materials, its columns, its smells, its temperature.”</i> <br><br>
-
-But here’s the twist: sketching isn’t just about what’s in front of us.
-It’s also about what we feel, remember, and imagine. There are two
-ways of sketching:<br>
-<b>1. Referential Sketching</b> – recording exactly what you see.<br>
-<b>2. Analytical Sketching</b> – capturing movement, patterns,
- and sensations beyond the visual.
-            </p>
+            <p class="text"> 
+				Sketching is more than just drawing what’s in front of you—it’s a way of learning to see. It trains us to observe details, patterns, and relationships between spaces, objects, and people. Sketching helps us analyze our surroundings, making us more aware of the invisible forces shaping them. <br><br>
+              	As Norman Crowe and Paul Laseau put it,<br>
+  				<em>"Seeing is a necessary prelude to visual expression.”</em> <br><br>
+              	Eric Jenkins expands on this, explaining that sketching is a bodily interaction:<br>
+  				<em>"It is necessary to learn from the world by engaging in its reality—its materials, its columns, its smells, its temperature.”</em> <br><br>
+              	But here’s the twist: sketching isn’t just about what’s in front of us. It’s also about what we feel, remember, and imagine. There are two ways of sketching:<br>
+  				<strong>1. Referential Sketching</strong> – recording exactly what you see.<br>
+  				<strong>2. Analytical Sketching</strong> – capturing movement, patterns, and sensations beyond the visual. 
+			  </p>
             <img class="image center" src="img/biohaha-helmi_hardian-angela_sunaryo-braga.png" style="max-width: 422px;">
-			  <p class="image-caption">Pathways Mapping</p>
+		    <p class="image-caption">Pathways Mapping</p>
             <h2 id="exercise-1">Exercise 1: Footwork – Mapping the Unseen Movements</h2>
-            <hr>
-			  
+            <hr>		  
 			<p class="text">
 Every step tells a story. Movements—whether human, animal, or even mechanical—shape the rhythm of a place. Let’s capture these unseen patterns through sketching. <br><br>
 				  
 <b>Try this:</b> <br>		  
 // Find a space where people (or creatures) are moving—maybe a busy street, a park, or a café.<br>
-// Observe the movement. Where do people walk? Where do the pause?<br>
+// Observe the movement. Where do people walk? Where do they pause?<br>
 // Now, sketch the movement—not the people themselves, but the pathways they create.<br>
 // Can you show the difference between a steady walk, a hesitant pause, or a sudden sprint? <br>
 // What would movement sound like if it were a shape?
             </p> 
 		<img class="image center" src="img/biohaha-helmi_hardian-angela_sunaryo-pattern.png" style="max-width: 422px;">
 			  <p class="image-caption add-bottom-margin-large">Exercise 1: Footwork – Mapping the Unseen Movements</p>
-
           </div>
         </div>
-
+		<!--End Text and Info-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Tuning-->
-		  
+        <!--Start Tuning-->	  
         <div class="flex-row">
           <div class="flex-item flex-column"> 
 			<h2 id="tuning-in">Tuning In: Listening to Space</h2>
@@ -146,6 +260,7 @@ Sound surrounds us in ways sight cannot. Close your eyes in a crowded café, a m
 			  <p class="image-caption add-bottom-margin-large">Exercise 2 - Tuning In – Drawing with Your Ears</p>
           </div>
         </div> 
+		<!--End Tuning-->	  
 		<!-------------------------------------------------------------------------------------------->
         <!--Start Smell--> 
 		<div class="flex-row">
@@ -155,7 +270,7 @@ Sound surrounds us in ways sight cannot. Close your eyes in a crowded café, a m
             <p class="text">
 Smell is the most <i>unnoticed</i> but <i>memorable</i> sense. A single scent can transport you back in time—a childhood home, a street market in another city, the salty breeze of a distant beach.<br><br>
 
-Pallasmaa calls this the <i>“space of smell”</i>, where scent engraves itself into our perception of place. In urban design, scent can reveal the history and character of a space, influencing how we navigate it.<br>
+Pallasmaa calls this the <i>“space of smell”</i>, where scent engraves itself into our perception of place. In urban design, scent can reveal the history and character of a space, influencing how we navigate it.
 			  </p>
 			<h2 id="exercise-3">Exercise 3: Smell Notes – The City’s Invisible Layers</h2>
             <hr> 
@@ -175,6 +290,7 @@ Try mapping your journey using only smells. Imagine drawing the city with scent 
 			  
           </div>
         </div> 
+		<!--End Smell-->   
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Taste-->   
 		<div class="flex-row">
@@ -195,13 +311,13 @@ We often say we <i>"eat our way through a city"</i>, and for good reason—food 
 // Before eating, observe: What do they smell like? Feel like? Look like? <br>
 // Close your eyes as you take a bite. What textures do you notice? <br>
 // Does the taste remind you of another place or memory? <br>
-// Can you describe the flavor using words, colors, or even a drawing? <br>
-
+// Can you describe the flavor using words, colors, or even a drawing?
             </p>
 			<img class="image center" src="img/biohaha-helmi_hardian-angela_sunaryo-taste.png" style="max-width: 422px;"> 
 			  <p class="image-caption add-bottom-margin-large">Exercise 4: Taste Rave – Sensing with Your Tongue</p>
           </div>
         </div> 
+		<!--End Taste-->    
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Texture--> 
 		  <div class="flex-row">
@@ -223,13 +339,15 @@ Buildings aren’t just shapes; they’re warm, cool, rough, smooth, grainy, or 
 // Find different surfaces—walls, fabrics, tree bark, metal, glass. <br>
 // Close your eyes. Run your hands over them. What do they feel like? <br>
 // Can you describe the textures in words? <br>
-// If you were to draw this feeling, what would it look like? <br>
-
+// If you were to draw this feeling, what would it look like?
             </p>
 		<img class="image center" src="img/biohaha-helmi_hardian-angela_sunaryo-texture.png" style="max-width: 422px;">
-			  <p class="image-caption add-bottom-margin-large">Exercise 5: Texture Impressions – Reading with Your Hands</p>
+			  <p class="image-caption add-bottom-margin-large">
+				  Exercise 5: Texture Impressions – Reading with Your Hands
+			  </p>
           </div>
         </div> 
+		<!--End Texture-->   
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Final Thought--> 
 		  <div class="flex-row">
@@ -247,10 +365,11 @@ Every sense tells a different story of the city, and together, they create an ex
 // Did mapping movement, sound, smell, or texture change how you understand the city? <br>
 // If you could create a map that isn’t based on streets, what would you include? <br><br>
 
-Sensewalking is a way of tuning in—to the city, to others, and to yourself. Keep sensing, keep walking, and keep rediscovering the world around you. <br><br>
+Sensewalking is a way of tuning in—to the city, to others, and to yourself. Keep sensing, keep walking, and keep rediscovering the world around you.
 			  </p>
           </div>
         </div> 
+		<!--End Final Thought-->   
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Bio Synth--> 
 		  <div class="flex-row">
@@ -279,6 +398,7 @@ This isn’t just about making cool noises (though that’s a bonus). It’s abo
 			  <p class="image-caption add-bottom-margin-large">DIY Bio-Synth Instruction Manual</p>
           </div>
         </div> 
+		<!--End Bio Synth-->   
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start AV Performance--> 
 		  <div class="flex-row">
@@ -293,7 +413,7 @@ This is not your usual performance. No set melodies, no fixed rhythms—just you
 <b>How It Works</b> <br>
 Each performer holds a <b>transparent acetate sheet</b> with <b>black marker patterns</b>—this is your score. By moving your hands along the drawn paths, you control how much light passes through. These light variations are picked up by <b>DIY synthesizers</b>, which respond through potentiometers or variable resistors, translating gestures into sound. <br><br>
 
-// <b>More light = Higher frequencies or increased modulation.</b> <br>
+// <b>More light = Higher frequencies or increased modulation. </b><br>
 // <b>Less light = Lower frequencies or subdued sound.</b> <br><br>
 
 Meanwhile, the environment is part of the composition. Shadows, external light sources, and movement introduce unexpected shifts. Our <b>live digital processors</b>—one on <b>sound mixing & FX</b>, the other on <b>visuals & LED mapping</b>—shape this real-time dialogue, amplifying the city’s hidden textures into an immersive performance. 
@@ -302,6 +422,7 @@ Meanwhile, the environment is part of the composition. Shadows, external light s
 			  <p class="image-caption add-bottom-margin-large">Collective Audio-Visual Performance</p>
           </div>
         </div> 
+		<!--End AV Performance-->   
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Composition Structure -->
 		  <div class="flex-row">
@@ -333,6 +454,7 @@ Let the flux begin!
 			  </p>
           </div>
         </div> 
+		<!--End Composition Structure -->  
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Documentation--> 
         <div class="banner" style="background: url('img/biohaha-helmi_hardian-angela_sunaryo-doc.jpeg') no-repeat center; background-size: cover; height: 300px;"></div> 
@@ -352,12 +474,12 @@ Braga, Bandung | 8 March 2025
 		  
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-001.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-001.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-001.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-002.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-002.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-002.JPG">
             </a>
           </div>
@@ -365,12 +487,12 @@ Braga, Bandung | 8 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-003.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-003.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-003.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-004.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-004.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-004.JPG">
             </a>
           </div>
@@ -378,12 +500,12 @@ Braga, Bandung | 8 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-005.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-005.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-005.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-006.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-006.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-006.JPG">
             </a>
           </div>
@@ -391,12 +513,12 @@ Braga, Bandung | 8 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-007.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-007.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-007.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-008.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-008.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-008.JPG">
             </a>
           </div>
@@ -404,12 +526,12 @@ Braga, Bandung | 8 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-009.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-009.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-009.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-010.jpg" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-010.jpg" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-010.jpg">
             </a>
           </div>
@@ -417,17 +539,19 @@ Braga, Bandung | 8 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-011.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-011.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-011.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-footwalk-012.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-012.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-footwalk-012.JPG">
             </a>
           </div>
-        </div>        
-		  
+        </div>     
+		  <!--End Documentation 001--> 
+		  <!--------------------------------------------------------------------------------------------> 
+		  <!--Start Reflection 001--> 		  
         <div class="flex-row">
           <div class="flex-item flex-column"> 
 			  <h2 id="reflection-03">Reflections on Sensewalking Flux </h2>
@@ -438,11 +562,12 @@ Braga is a living archive of sensations—an intricate choreography of textures,
 
 Interestingly, observations extended beyond static elements like <b>tree bark or fabric textures</b>; many were drawn to the <b>movement of people</b>—the fluidity of pedestrian rhythms, the micro-gestures of those pausing, waiting, or weaving through the streets. The interplay between <b>overstimulation and stillness</b> emerged as a key theme. A sudden downpour, for example, momentarily shifted the tempo of the environment, creating an unplanned moment of reflection. <br><br>
 
-Notably, this phase coincided with <b>Ramadhan</b>, adding another layer of sensory awareness. The <b>scent of food</b> lingering in the air became an invisible yet potent presence—highlighting how absence (of taste, in this case) can heighten perception. This interplay between presence and absence, material and immaterial, shaped a deeper understanding of how the body navigates sensory flux. <br><br>
+Notably, this phase coincided with <b>Ramadhan</b>, adding another layer of sensory awareness. The <b>scent of food</b> lingering in the air became an invisible yet potent presence—highlighting how absence (of taste, in this case) can heighten perception. This interplay between presence and absence, material and immaterial, shaped a deeper understanding of how the body navigates sensory flux.
             </p>
           </div>
         </div> 
-		  <!--------------------------------------------------------------------------------------------> 
+		<!--End Reflection 001-->   
+		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Documentation 002--> 
 		  <div class="flex-row">
           <div class="flex-item flex-column">
@@ -458,12 +583,12 @@ Route 64, Bandung | 7 March 2025
 		  
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-001.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-001.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-001.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-002.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-002.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-002.JPG">
             </a>
           </div>
@@ -471,12 +596,12 @@ Route 64, Bandung | 7 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-003.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-003.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-003.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-004.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-004.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-004.JPG">
             </a>
           </div>
@@ -484,12 +609,12 @@ Route 64, Bandung | 7 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-005.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-005.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-005.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-006.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-006.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-006.JPG">
             </a>
           </div>
@@ -497,12 +622,12 @@ Route 64, Bandung | 7 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-007.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-007.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-007.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-008.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-008.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-008.JPG">
             </a>
           </div>
@@ -510,12 +635,12 @@ Route 64, Bandung | 7 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-009.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-009.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-009.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-010.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-010.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-010.JPG">
             </a>
           </div>
@@ -523,17 +648,19 @@ Route 64, Bandung | 7 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-011.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-011.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-011.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-biosynth-012.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-012.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-biosynth-012.JPG">
             </a>
           </div>
-        </div>        
-		  
+        </div>     
+		  <!--End Documentation 002--> 
+		  <!--------------------------------------------------------------------------------------------> 
+		  <!--Start Reflection 002--> 	  
         <div class="flex-row">
           <div class="flex-item flex-column"> 
 			  <h2 id="reflection-03">Reflections on Sensewalking Flux </h2>
@@ -542,11 +669,11 @@ Route 64, Bandung | 7 March 2025
 
 From perceiving to producing—this phase invited participants to <b>engage with sound through hands-on synthesis</b>. The workshop was designed as a structured introduction to DIY electronic instruments, but participants quickly transformed it into a space for <b>collaboration and improvisation</b>. <br><br>
 
-Rather than merely assembling circuits, many took an <b>experimental approach</b>, testing the limits of their synths—<b>adding, removing, modifying, and reconfiguring components</b>. This iterative process mirrored the unpredictability of sound itself: a circuit glitch became a new sonic texture; an unexpected interaction between components sparked a new idea. In this way, the workshop embodied an <b>open-ended methodology</b>, where learning occurred through tactile engagement, failure, and adaptation. <br><br>
+Rather than merely assembling circuits, many took an <b>experimental approach</b>, testing the limits of their synths—<b>adding, removing, modifying, and reconfiguring components</b>. This iterative process mirrored the unpredictability of sound itself: a circuit glitch became a new sonic texture; an unexpected interaction between components sparked a new idea. In this way, the workshop embodied an <b>open-ended methodology</b>, where learning occurred through tactile engagement, failure, and adaptation. 
             </p>
           </div>
         </div>
-		
+		<!--End Reflection 002--> 
 		<!--------------------------------------------------------------------------------------------> 
 		<!--Start Documentation 003--> 
         <div class="flex-row">
@@ -563,12 +690,12 @@ Route 64, Bandung | 9 March 2025
 		  
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-001.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-001.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-001.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-002.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-002.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-002.JPG">
             </a>
           </div>
@@ -576,12 +703,12 @@ Route 64, Bandung | 9 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-003.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-003.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-003.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-004.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-004.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-004.JPG">
             </a>
           </div>
@@ -589,12 +716,12 @@ Route 64, Bandung | 9 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-005.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-005.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-005.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-006.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-006.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-006.JPG">
             </a>
           </div>
@@ -602,12 +729,12 @@ Route 64, Bandung | 9 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-007.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-007.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-007.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-008.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-008.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-008.JPG">
             </a>
           </div>
@@ -615,12 +742,12 @@ Route 64, Bandung | 9 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-009.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-009.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-009.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-010.jpg" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-010.jpg" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-010.jpg">
             </a>
           </div>
@@ -628,17 +755,19 @@ Route 64, Bandung | 9 March 2025
 		  
 		  <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-011.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-011.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-011.JPG">
             </a>
           </div>
           <div class="flex-item flex-column">
-            <a href="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-performance-012.JPG" target="_blank" class="image max-width-400">
+            <a href="img/biohaha-helmi_hardian-angela_sunaryo-performance-012.JPG" target="_blank" class="image max-width-400">
               <img src="img/biohaha-helmi_hardian-angela_sunaryo-performance-012.JPG">
             </a>
           </div>
-        </div>        
-		  
+        </div>   
+		  <!--End Documentation 003--> 
+		  <!-------------------------------------------------------------------------------------------->
+		  <!--Start Reflection 003--> 	  
         <div class="flex-row">
           <div class="flex-item flex-column"> 
 			  <h2 id="reflection-03">Reflections on Sensewalking Flux </h2>
@@ -651,8 +780,10 @@ This improvisatory sound-making session transformed the city into an active coll
 
 By the end of Sensewalking Flux, the distinction between <b>observer and participant, listener and performer</b> had blurred. What began as a structured exercise in sensory awareness evolved into a collective exploration of <b>how we experience and reimagine our surroundings</b>. <br><br>
 				
-The question that remains: <b>How will you continue to listen?</b> <br><br>
+The question that remains: <b>How will you continue to listen?</b> 
             </p>
+		<!--End Reflection 003--> 	
+		<!-------------------------------------------------------------------------------------------->	  
 			  <img class="image center" src="img/biohaha-helmi_hardian-angela_sunaryo-hanupis.png" style="max-width: 422px;">
           </div>
         </div>
