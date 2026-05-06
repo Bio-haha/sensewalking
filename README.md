@@ -1,7 +1,7 @@
 # Sensewalking Flux
 A PLAYFUL GUIDE FOR GENERATIVE SENSE INTERPLAY <br><br> 
 
-Sensewalking Flux is a participatory research project based on multisensory navigation that explores embodied experiences in understanding the city. This work invites participants to engage in sensewalking, where sensory interactions—sight, sound, touch, smell, and taste—are documented using specific recording patterns and then translated into a generative score. This score is later presented as a collective performance, transforming data into sound that reflects a cross-sensory experience of Braga: a landmark as it is and as it is perceived. <br><br> 
+Sensewalking Flux is a participatory research project based on multisensory navigation that explores embodied experiences in understanding the city. This work invites participants to engage in sensewalking, where sensory interactions, sight, sound, touch, smell, and taste, are documented using specific recording patterns and then translated into a generative score. This score is later presented as a collective performance, transforming data into sound that reflects a cross-sensory experience of Braga: a landmark as it is and as it is perceived. <br><br> 
 
 #### Sensewalking Flux - Bandung, Indonesia 
 <img src="https://github.com/Bio-haha/sensewalking/blob/main/img/biohaha-helmi_hardian-angela_sunaryo-zine.png" width="300">
